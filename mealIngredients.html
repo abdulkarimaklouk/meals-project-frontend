@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals System </title>
+    <!-- Framework Css File -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="img/" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body id="mealIngredients">
+    <div class="page d-flex">
+        <aside class="bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Meals System</h3>
+            <ul>
+                <li id="stores">
+                    <a id="stores" class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="stores.html">
+                        <i class="fas fa-store fa-wa"></i>
+                        <span>Stores</span>
+                    </a>
+                </li>
+
+                <li id="inventory">
+                    <a id="inventory" class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="inventory.html">
+                        <i class="fa-solid fa-truck-ramp-box fa-wa"></i>
+                        <span>Inventory</span>
+                    </a>
+                </li>
+
+                <li id="ingredients">
+                    <a id="ingredients" class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="ingredients.html">
+                        <i class="fas fa-shopping-basket fa-wa"></i>
+                        <span>Ingredients</span>
+                    </a>
+                </li>
+
+                <li id="mealIngredients">
+                    <a id="mealIngredients" class="active d-flex f-align-center fs-14 c-black rad-6 p-10"
+                        href="mealIngredients.html">
+                        <i class="fas fa-utensils fa-wa"></i>
+                        <span>Meal Ingredients</span>
+                    </a>
+                </li>
+
+                <li id="meals">
+                    <a id="meals" class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="meals.html">
+                        <i class="fa-solid fa-burger fa-wa "></i>
+                        <span>Meals</span>
+                    </a>
+                </li>
+
+                <li id="orders">
+                    <a id="orders" class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="orders.html">
+                        <i class="fas fa-file-invoice fa-wa "></i>
+                        <span>Orders</span>
+                    </a>
+                </li>
+
+                <li id="sales">
+                    <a id="sales" class=" d-flex f-align-center fs-14 c-black rad-6 p-10" href="sales.html">
+                        <i class="fas fa-tags fa-wa "></i>
+                        <span>Sales</span>
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+
+        <main class="w-full p-relative">
+            <header class="bg-white p-25 between-flex p-relative ">
+                <h2>Meal Ingredients</h2>
+                <button id="btn-create" class="tran-3s btn-shape-circle c-white">+</button>
+            </header>
+
+            <section class="p-15 sec-main">
+                <header class="d-flex f-align-center f-wrap">
+                    <input type="number" id="meal_input_id" class="input_id rad-6 p-5 bg-white" placeholder="Meal ID">
+                    <input type="number" id="ingredient_input_id" class="input_id rad-6 p-5 bg-white"
+                        placeholder="Ingredient ID">
+                    <button id="btn-get" class="p-5 fs-14 rad-6 bg-white">GET</button>
+                </header>
+
+                <section class="table">
+                    <table class="rad-6 w-full ">
+                        <thead class="txt-c">
+                            <tr>
+                                <th>meal id</th>
+                                <th>ingredient id</th>
+                                <th>meal name</th>
+                                <th>ingredient name</th>
+                                <th>quantity</th>
+                                <th>date of create</th>
+                                <th>latest ingredient update</th>
+                                <th>actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="txt-c">
+                        </tbody>
+                    </table>
+                </section>
+
+                <footer class="between-flex f-wrap">
+                    <div class="f-align-center">
+                        <small>
+                            page 1 of 10 pages
+                        </small>
+                    </div>
+                    <div id="btns-arrow" class="d-flex f-align-center">
+                        <button id="btn-angle"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="btn-angle"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </footer>
+            </section>
+
+            <span class="rad-6 fs-14 w-fit">
+                <span style="margin-right: 10px;">Lorem, ipsum dolor.</span>
+                <i id="xmark" class="fa-solid fa-xmark"></i>
+            </span>
+
+            <div class="div-confirm">
+                <div class="text">
+                    <h4>Are you sure you want to delete?</h4>
+                </div>
+                <div class="btns">
+                    <button id="btn-cancel">cancel</button>
+                    <button id="btn-confirm">confirm</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
